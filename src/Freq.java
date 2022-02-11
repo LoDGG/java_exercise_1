@@ -26,6 +26,7 @@ public class Freq implements Command {
 
         var freqMap = words.stream()
                 .collect(Collectors.groupingBy(s -> s, Collectors.counting()));
-        freqMap.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).limit(3).forEach(e -> System.out.println(e.getKey()));
+        freqMap.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).limit(3).forEach(e -> System.out.print(e.getKey() + " "));
+        System.out.println();
     }
 }

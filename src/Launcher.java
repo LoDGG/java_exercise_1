@@ -17,7 +17,7 @@ public class Launcher {
     public static void main(String[] args) throws IOException {
         System.out.println("un texte de bienvenue");
         Scanner scan = new Scanner(System.in);
-        boolean Continue = true;
+        boolean Continue = false;
         String entry = null;
 
         List<Command> commands = List.of(
